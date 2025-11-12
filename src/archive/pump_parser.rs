@@ -1,14 +1,14 @@
-use crate::types::{PumpEvent, PumpData, TokenMetadata};
+use crate::types::{TokenEvent, PumpData, TokenDetails};
 use chrono::Utc;
 use log::warn;
 
-pub fn parse_pump_tx(signature: &str, _raw_log: &str) -> Option<PumpEvent> {
+pub fn parse_pump_tx(signature: &str, _raw_log: &str) -> Option<TokenEvent> {
     warn!("Using mock parser, implement actual logic for production.");
-    Some(PumpEvent {
+    Some(TokenEvent {
         event_type: "token_created".to_string(),
         timestamp: Utc::now().to_rfc3339(),
         transaction_signature: signature.to_string(),
-        token: TokenMetadata {
+        token: TokenDetails {
             mint_address: "ABC123".into(),
             name: "MyToken".into(),
             symbol: "MTK".into(),

@@ -1,0 +1,78 @@
+# Rust
+/target/
+**/*.rs.bk
+*.pdb
+# Note: Cargo.lock should be committed for applications
+# Uncomment the line below if you want to ignore Cargo.lock
+# Cargo.lock
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+env.example
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.code-workspace
+
+# Logs
+*.log
+logs/
+*.log.*
+
+# OS
+Thumbs.db
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
+
+# Build artifacts
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+
+# Test artifacts
+/test-results/
+/coverage/
+*.profraw
+
+# Documentation build
+/book/
+/doc/
+
+# Backup files
+*.bak
+*.tmp
+*~
+.#*
+
+# Python (for examples)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+
+# Node.js (if any examples use it)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
