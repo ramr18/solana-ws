@@ -36,7 +36,14 @@ solana-ws/
 ├── Cargo.lock             # Dependency lock file
 ├── .env.example           # Environment variables template
 ├── .gitignore             # Git ignore rules
-└── README.md              # Main documentation
+├── LICENSE                # MIT License
+├── README.md              # Main documentation
+├── CONTRIBUTING.md        # Contribution guidelines
+├── CHANGELOG.md           # Project changelog
+└── .github/               # GitHub configuration
+    └── workflows/         # CI/CD workflows
+        ├── ci.yml         # Continuous Integration
+        └── rust.yml       # Rust-specific CI
 ```
 
 ## File Descriptions
@@ -84,7 +91,15 @@ solana-ws/
 - **Cargo.lock**: Dependency lock file (should be committed for applications)
 - **.env.example**: Environment variables template
 - **.gitignore**: Git ignore rules
+- **LICENSE**: MIT License file
 - **README.md**: Main project documentation
+- **CONTRIBUTING.md**: Guidelines for contributors
+- **CHANGELOG.md**: Project version history and changes
+
+### GitHub Configuration (`.github/`)
+
+- **workflows/ci.yml**: Continuous Integration workflow
+- **workflows/rust.yml**: Rust-specific CI workflow
 
 ## Standard Practices
 
